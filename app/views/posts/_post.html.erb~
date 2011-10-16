@@ -1,0 +1,5 @@
+<%= div for @post do %>
+<h2><%= link to unless current h(@post.title) %></h2>
+<%= simple format h(@post.body) %>
+<% end %>
+

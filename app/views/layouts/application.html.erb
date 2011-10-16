@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vijay's Blog</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= auto_discovery_link_tag :atom, posts_path(:format => :atom) %>
+
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
